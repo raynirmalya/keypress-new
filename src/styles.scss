@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.component-body {
+  width: 100%;
+  height: 400px;
+}
+.va-t {
+  vertical-align: top;
+}
+.a-bg {
+  background-color: #486D97;
+}
+
+.b-bg {
+  background-color: #3F6691;
+}
+
+.c-bg {
+  background-color: #0E3F75;
+}
+.a-bg, .b-bg, .c-bg {
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  height: 50vh;
+  text-align: center;
+  line-height: 50vh;
+}
+.result {
+  font-size: 2rem;
+}

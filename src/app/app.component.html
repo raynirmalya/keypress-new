@@ -1,0 +1,18 @@
+
+<div>
+  <div class="col-12 p-0 m-0">
+    <div class="col-6 d-inline-block va-t p-0 m-0"><app-a></app-a></div>
+    <div class="col-6 d-inline-block va-t p-0 m-0"><app-b></app-b></div>
+    <div class="col-6 d-inline-block va-t p-0 m-0"><app-c></app-c></div>
+    <div class="col-6 d-inline-block va-t result p-0 m-0">
+      <div *ngFor="let item of sharedService.allActiveEvents | keyvalue" class="m-4">
+        <div *ngIf="sharedService.allActiveEvents[item.key].length > 0"><strong>{{item.key}}:</strong></div>
+        <div *ngIf="sharedService.allActiveEvents[item.key].length > 0" class="ml-2 mt-1">
+          <div *ngFor="let val of item.value" >
+            "{{val.keyCombo}}": "{{val.description}}"
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

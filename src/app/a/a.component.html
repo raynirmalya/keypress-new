@@ -1,0 +1,5 @@
+<div [ngStyle]="{backgroundColor:color}" class="a-bg">A</div>
+<ng-container *ngFor="let evt of sharedService.allActiveEvents[cmpName]; let i = index">
+    <app-keyboard-shortcut [combo]="evt.keyCombo" [description]="evt.description" (callback)="callback($event, i)"></app-keyboard-shortcut>
+</ng-container>
+
